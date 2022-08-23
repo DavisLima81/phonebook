@@ -17,7 +17,7 @@ class CreateContactsTable extends Migration
             $table->id();
             $table->string('name', 50);
             $table->string('last_name', 50);
-            $table->string('remember', 155);
+            $table->string('remember', 155)->nullable();
             $table->unsignedBigInteger('contact_type_id');
             $table->timestamps();
 
